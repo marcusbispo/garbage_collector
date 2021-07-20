@@ -55,9 +55,9 @@ void update(void *st_address, int inc){                     // update function
     }
 }
 
-void *malloc2(int size_){                                    // malloc2 function
+void *malloc2(int size_){                                   // malloc2 function
     heap *aux = malloc(sizeof(heap));                       // we create an aux node
-    aux->address = malloc(size_);                           // alocate memory for our data
+    aux->address = malloc(size_);                           // allocate memory for our data
     aux->count = 1;                                         // count 1 for our node
 
     if(list != NULL){                                       // if there's something inside our heap
